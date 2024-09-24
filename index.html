@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <section class="section__select">
+      <div class="select__container">
+        <form class="select__form">
+          <select class="select" required>
+            <option selected disabled hidden value="123">
+              Выберите страну
+            </option>
+            <optgroup label="СНГ">
+              <hr />
+              <option value="dog">Россия</option>
+              <option value="cat">Беларусь</option>
+              <option value="hamster" disabled>Казахстан</option>
+            </optgroup>
+            <optgroup label="Европа">
+              <hr />
+              <option value="parrot">Польша</option>
+              <option value="macaw">Германия</option>
+              <option value="albatross">Франция</option>
+            </optgroup>
+          </select>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
