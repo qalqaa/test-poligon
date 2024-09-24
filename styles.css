@@ -1,0 +1,91 @@
+html {
+    background: #34344e;
+    color: #34344e;
+}
+
+.section__radio {
+    display: flex;
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.section__radio h2 {
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.section__radio label {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+.radio__container {
+    position: relative;
+    background: #eceef8;
+    border-radius: 10px;
+    display: flex;
+}
+
+.radio__container::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 38%;
+    left: 2%;
+    border-radius: 100%;
+    background-color: #d1d1d1;
+}
+
+.radio__container::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    top: 72.5%;
+    left: 2%;
+    border-radius: 100%;
+    background-color: #d1d1d1;
+}
+
+.radio__wrapper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 80px;
+    margin-right: 100px;
+}
+
+.section__radio img {
+    width: 598px;
+    height: 578px;
+    border-radius: 10px;
+}
+
+.radio {
+    appearance: none;
+    border: 1px solid #f49c89;
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+}
+
+.radio::before {
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.radio:checked::before {
+    border: 5px solid transparent;
+    border-radius: 100%;
+    background: #f49c89;
+    margin: 2px;
+}
