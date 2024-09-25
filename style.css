@@ -36,6 +36,14 @@ details {
     border-radius: 20px;
 }
 
+details[open] .summary__btn {
+    rotate: 180deg;
+}
+
+.summary__btn {
+    transition: rotate 0.3s ease-in-out;
+}
+
 summary {
     padding: 20px;
     padding-inline: 25px;
