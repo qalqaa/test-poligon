@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section__replay">
+      <h2>Leave a replay</h2>
+      <p>
+        Your email address will not be published. Required fields are marked *
+      </p>
+      <form class="replay__form">
+        <div class="replay__input-group">
+          <input placeholder="Enter your name*" type="text" />
+          <input placeholder="Enter your Email*" type="text" />
+          <input placeholder="Enter your Website*" type="text" />
+        </div>
+        <div class="replay__checkbox-conainer">
+          <input
+            class="custom-checkbox"
+            type="checkbox"
+            name="saveName"
+            id="saveName"
+          />
+          <label for="saveName"
+            >Save my name, email, and website in this browser for the next time
+            I comment</label
+          >
+        </div>
+        <div class="replay__input-group">
+          <label for="comment">Your Comment*</label>
+          <input type="text" name="comment" id="comment" />
+        </div>
+        <button>POST COMMENT</button>
+      </form>
+    </section>
+  </body>
+</html>
