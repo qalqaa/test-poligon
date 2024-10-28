@@ -1,9 +1,11 @@
 :root {
-    min-height: 100vh;
-    color: #fff;
-    font-family: "JetBrains Mono", monospace;
+    /* переменные */
+    --text-color: #fff;
+    --font-family: "JetBrains Mono", monospace;
+    color: var(--text-color);
+    font-family: var(--font-family);
     background: no-repeat linear-gradient(0deg, #8ba7ff 0%, #b1c4ff 100%);
-    background-size: cover;
+    min-height: 100vh;
 }
 
 p {
@@ -28,15 +30,22 @@ p {
 }
 
 .example-fist__without-pseudo {
+    color: #001969;
     font-weight: 700;
     font-size: 20px;
 }
 
 .pseudo {
-    margin: 2px;
+    width: 400px;
+    margin-bottom: 100px;
     padding: 5px;
-    border: 1px solid #fff;
-    border-radius: 10px;
+}
+
+.pseudo-fist > p:first-child {
+    /* классы */
+    font-weight: 700;
+    font-size: 20px;
+    color: #001969;
 }
 
 .pseudo > p:only-child {
@@ -72,6 +81,121 @@ button {
 
 .pseudo2::before,
 .pseudo2::after {
-    color: #001969  ;
+    color: #001969;
     content: "Меня тут нет но как бы есть))";
+}
+.box {
+    padding: 20px;
+}
+
+.box::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: no-repeat linear-gradient(0deg, #8ba7ff 0%, #b1c4ff 100%);
+    border: 1px solid #001969;
+}
+
+.pseudo-nth {
+    padding: 40px;
+}
+
+.pseudo-nth > li:nth-last-child(2n) {
+    /* классы */
+    font-weight: 700;
+    font-size: 20px;
+    color: #001969;
+}
+
+.pseudo-link > a:link {
+    /* классы */
+    color: #001969;
+}
+
+.pseudo-link > a:visited {
+    /* классы */
+    color: #01ffe1;
+}
+
+div {
+    padding: 40px;
+}
+
+.pseudo-last:first-child {
+    /* классы */
+    font-weight: 700;
+    font-size: 20px;
+    color: #001969;
+}
+
+.pseudo-only > p:only-child {
+    /* классы */
+    font-weight: 700;
+    font-size: 20px;
+    color: #001969;
+}
+
+.list {
+    width: 400px;
+}
+
+.list__item::marker {
+    color: red;
+}
+
+.list__item:nth-last-of-type(2n) {
+    color: #001969;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form input:disabled {
+    opacity: 0.5;
+}
+
+.form input:enabled {
+    background-color: #000053;
+}
+
+.form input:checked {
+    accent-color: #000053;
+}
+
+.form input:required {
+    border: 1px solid #ff5757;
+}
+
+.form input:placeholder-shown {
+    box-shadow: red 0 0 10px;
+}
+
+.form input::placeholder {
+    font-family: var(--font-family);
+    font-style: italic;
+    color: #fff;
+}
+
+p::selection {
+    background-color: #01ffe1;
+}
+
+.has-form {
+    width: 400px;
+}
+
+.title:has(+p){
+    margin: 0;
+    color: red;
 }
