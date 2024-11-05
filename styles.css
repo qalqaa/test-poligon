@@ -1,5 +1,4 @@
 :root {
-    /* переменные */
     --text-color: #fff;
     --font-family: "JetBrains Mono", monospace;
     color: var(--text-color);
@@ -42,7 +41,6 @@ p {
 }
 
 .pseudo-fist > p:first-child {
-    /* классы */
     font-weight: 700;
     font-size: 20px;
     color: #001969;
@@ -102,19 +100,16 @@ button {
 }
 
 .pseudo-nth > li:nth-last-child(2n) {
-    /* классы */
     font-weight: 700;
     font-size: 20px;
     color: #001969;
 }
 
 .pseudo-link > a:link {
-    /* классы */
     color: #001969;
 }
 
 .pseudo-link > a:visited {
-    /* классы */
     color: #01ffe1;
 }
 
@@ -123,14 +118,12 @@ div {
 }
 
 .pseudo-last:first-child {
-    /* классы */
     font-weight: 700;
     font-size: 20px;
     color: #001969;
 }
 
 .pseudo-only > p:only-child {
-    /* классы */
     font-weight: 700;
     font-size: 20px;
     color: #001969;
