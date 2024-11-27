@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "NT Somic";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local("NT Somic"),
+        local("NT Somic-Regular"),
+        url("fonts/NTSomic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NT Somic";
+    font-weight: 700;
+    font-style: normal;
+    src:
+        local("NT Somic"),
+        local("NT Somic-Regular"),
+        url("fonts/NTSomic-Bold.ttf") format("truetype");
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "NT Somic", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+details {
+    background-color: #e8f2fc;
+    width: 360px;
+    border-radius: 20px;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.arrow {
+    border: 2px solid #2a84ee;
+    padding: 11px 10px;
+    border-radius: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+details[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.details__container {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6faff;
+}
+
+.list {
+    display: flex;
+    line-height: 18px;
+    color: #6c778e;
+    gap: 20px;
+    flex-direction: column;
+}
+
+::marker {
+    color: #2a84ee;
+}
+
+.details__container > button {
+    cursor: pointer;
+    background: linear-gradient(to right, #11ae88, #2a84ee);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
