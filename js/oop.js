@@ -63,36 +63,13 @@ myAccount.withdraw(200);
 
 //Inheritance
 class Vehicle {
-    constructor(name) {
-        this.name = name;
-    }
-
-    go() {
-        console.log(`${this.name} goes`);
+    accelerate() {
+        console.log('Shit as fast nagger');
     }
 }
 
-class Airplane extends Vehicle {
-    constructor(name, speed) {
-        super(name);
-        this.speed = speed;
-    }
-
-    go() {
-        console.log(`${this.name} flyes.`);
-    }
-
-    fetchSpeed() {
-        console.log(`${this.speed} - is current speed `);
-    }
-}
-
-const genericAnimal = new Vehicle('kidna vehicle');
-genericAnimal.go();
-
-const airplane = new Airplane('Airbus', 1337);
-airplane.go();
-airplane.fetchSpeed();
+class Car extends Vehicle {}
+new Car().accelerate();
 
 //Encapsulation
 class User {
@@ -126,3 +103,9 @@ console.log(user.username); // ivan
 console.log(user.checkPassword('12345')); // true
 user.changePassword('12345', '67890'); // Password successfully changed
 console.log(user.checkPassword('67890')); // true
+
+class A {
+    log() {
+        console.log('Hello from A');
+    }
+}
